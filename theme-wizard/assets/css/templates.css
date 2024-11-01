@@ -1,0 +1,200 @@
+.wrap {
+    padding: 20px;
+}
+
+.stdi-html-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stdi-html-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stdi-html-content p {
+    font-size: 20px;
+    color: #666;
+}
+
+.stdi-hover-image-container {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.stdi-hover-image {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stdi-hover-image:hover {
+    transform: scale(1.05);
+}
+
+.stdi-grid-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.stdi-templates {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(33.333% - 50px) !important;
+    box-sizing: border-box;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.stdi-templates:hover {
+    transform: translateY(-5px);
+}
+
+.stdi-templates-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.stdi-templates-inner-image-head {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.stdi-templates-inner-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 900;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.stdi-templates-inner-image:hover {
+    transform: scale(1.05);
+}
+
+.stdi-templates-inner-description {
+    padding: 15px;
+    text-align: center;
+}
+
+.stdi-templates-inner-description h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.stdi-templates-inner-button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stdi-templates-inner-button a {
+    background-color: #5f3afc;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.stdi-templates-inner-button a:hover {
+    background-color: #5f3afc;
+}
+
+.stdi-install-loader .stdi-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: install-loader-spin 1s linear infinite;
+}
+  
+@keyframes install-loader-spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 991px) {
+    .stdi-templates {
+        width: calc(48% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .stdi-templates {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .stdi-hover-image {
+        max-width: 100%;
+    }
+}
+
+.stdi-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: unset;
+}
+.stdi-card h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+.welcome-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.welcome-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stdi-card-body .links a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5f3afc;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.stdi-card-body .links a:hover {
+    background-color: #5f3afc;
+}
+.stdi-card-body {
+    padding: 0 30px;
+}
